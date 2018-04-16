@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "831611543937",
+    "firebase_url": "https://chatapp-1059a.firebaseio.com",
+    "project_id": "chatapp-1059a",
+    "storage_bucket": "chatapp-1059a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831611543937:android:48ebc396cc37c536",
+        "android_client_info": {
+          "package_name": "com.mantinband.amichai.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831611543937-r53k079anpgu6dsscu8f9g33g32ue4ef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mantinband.amichai.chat_app",
+            "certificate_hash": "9309adb709678031bce45292badb33d8855118b7"
+          }
+        },
+        {
+          "client_id": "831611543937-55thnagtlr72n3eensgnrc6050g01fg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBML6bGXCXKC4LTLb5zUotFB1QPjil48TM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831611543937-55thnagtlr72n3eensgnrc6050g01fg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
