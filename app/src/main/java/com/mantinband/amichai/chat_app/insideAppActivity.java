@@ -90,23 +90,13 @@ public class insideAppActivity extends AppCompatActivity {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams
-                        (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
-                params.setMargins(0,5,0,5);
-                TextView textView = new EditText(getApplicationContext());
-                textView.setBackgroundResource(R.drawable.recieved_message);
-                textView.setText(dataSnapshot.getValue(String.class));
-                textView.setTextColor(Color.BLACK);
-                textView.setLayoutParams(params);
-                textView.setEnabled(false);
-                textView.setPadding(15,15,15,15);
-                messageLinearLayout.addView(textView,messageLinearLayout.getChildCount());
-                scrollView.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        scrollView.fullScroll(View.FOCUS_DOWN);
+                try {
+                    if (!dataSnapshot.getValue(String.class).equals(((TextView)messageLinearLayout.getChildAt(messageLinearLayout.getChildCount()-1)).getText().toString())) {
+                        addMessage(dataSnapshot.getValue(String.class));
                     }
-                });
+                } catch (NullPointerException exception){
+                    addMessage(dataSnapshot.getValue(String.class));
+                }
             }
 
             @Override
@@ -117,5 +107,25 @@ public class insideAppActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void addMessage(String s) {
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams
+                (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
+        params.setMargins(0, 5, 0, 5);
+        TextView textView = new EditText(getApplicationContext());
+        textView.setBackgroundResource(R.drawable.recieved_message);
+        textView.setText(s);
+        textView.setTextColor(Color.BLACK);
+        textView.setLayoutParams(params);
+        textView.setEnabled(false);
+        textView.setPadding(15, 15, 15, 15);
+        messageLinearLayout.addView(textView, messageLinearLayout.getChildCount());
+        scrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
     }
 }
