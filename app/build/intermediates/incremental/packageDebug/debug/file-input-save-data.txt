@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Apr 17 01:11:52 IDT 2018
+#Tue Apr 17 04:34:55 IDT 2018
 0.baseType=DIRECTORY
 0.base=/home/amichai/chat_app/chat_app/app/build/intermediates/transforms/dexMerger/debug/0
 0.path=classes.dex

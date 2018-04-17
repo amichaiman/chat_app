@@ -96,7 +96,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/amichai/.gradle/caches/
 	android:allowBackup
 		ADDED from /home/amichai/chat_app/chat_app/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /home/amichai/chat_app/chat_app/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /home/amichai/chat_app/chat_app/app/src/main/AndroidManifest.xml:11:9-65
 activity#com.mantinband.amichai.chat_app.MainActivity
 ADDED from /home/amichai/chat_app/chat_app/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
